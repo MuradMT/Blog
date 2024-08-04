@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/muradmt/Public/Blog/Blog.Core/Blog.Core.csproj",
-      "projectName": "Blog.Core",
-      "projectPath": "/home/muradmt/Public/Blog/Blog.Core/Blog.Core.csproj",
+      "projectUniqueName": "/home/muradmt/Public/Blog/Blog.Data/Blog.Data.csproj",
+      "projectName": "Blog.Data",
+      "projectPath": "/home/muradmt/Public/Blog/Blog.Data/Blog.Data.csproj",
       "packagesPath": "/home/muradmt/.nuget/packages/",
-      "outputPath": "/home/muradmt/Public/Blog/Blog.Core/obj/",
+      "outputPath": "/home/muradmt/Public/Blog/Blog.Data/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/muradmt/.nuget/NuGet/NuGet.Config"

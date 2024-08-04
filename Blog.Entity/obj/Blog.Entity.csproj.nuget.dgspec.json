@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/muradmt/Public/Blog/Blog.Core/Blog.Core.csproj": {}
+    "/home/muradmt/Public/Blog/Blog.Entity/Blog.Entity.csproj": {}
   },
   "projects": {
-    "/home/muradmt/Public/Blog/Blog.Core/Blog.Core.csproj": {
+    "/home/muradmt/Public/Blog/Blog.Entity/Blog.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/muradmt/Public/Blog/Blog.Core/Blog.Core.csproj",
-        "projectName": "Blog.Core",
-        "projectPath": "/home/muradmt/Public/Blog/Blog.Core/Blog.Core.csproj",
+        "projectUniqueName": "/home/muradmt/Public/Blog/Blog.Entity/Blog.Entity.csproj",
+        "projectName": "Blog.Entity",
+        "projectPath": "/home/muradmt/Public/Blog/Blog.Entity/Blog.Entity.csproj",
         "packagesPath": "/home/muradmt/.nuget/packages/",
-        "outputPath": "/home/muradmt/Public/Blog/Blog.Core/obj/",
+        "outputPath": "/home/muradmt/Public/Blog/Blog.Entity/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/muradmt/.nuget/NuGet/NuGet.Config"

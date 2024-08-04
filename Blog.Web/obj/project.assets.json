@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/muradmt/Public/Blog/Blog.Core/Blog.Core.csproj",
-      "projectName": "Blog.Core",
-      "projectPath": "/home/muradmt/Public/Blog/Blog.Core/Blog.Core.csproj",
+      "projectUniqueName": "/home/muradmt/Public/Blog/Blog.Web/Blog.Web.csproj",
+      "projectName": "Blog.Web",
+      "projectPath": "/home/muradmt/Public/Blog/Blog.Web/Blog.Web.csproj",
       "packagesPath": "/home/muradmt/.nuget/packages/",
-      "outputPath": "/home/muradmt/Public/Blog/Blog.Core/obj/",
+      "outputPath": "/home/muradmt/Public/Blog/Blog.Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/muradmt/.nuget/NuGet/NuGet.Config"
@@ -55,6 +55,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
