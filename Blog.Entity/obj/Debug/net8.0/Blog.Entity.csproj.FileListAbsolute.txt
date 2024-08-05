@@ -1,0 +1,16 @@
+/home/muradmt/Public/Blog/Blog.Entity/bin/Debug/net8.0/Blog.Entity.deps.json
+/home/muradmt/Public/Blog/Blog.Entity/bin/Debug/net8.0/Blog.Entity.dll
+/home/muradmt/Public/Blog/Blog.Entity/bin/Debug/net8.0/Blog.Entity.pdb
+/home/muradmt/Public/Blog/Blog.Entity/bin/Debug/net8.0/Blog.Core.dll
+/home/muradmt/Public/Blog/Blog.Entity/bin/Debug/net8.0/Blog.Core.pdb
+/home/muradmt/Public/Blog/Blog.Entity/obj/Debug/net8.0/Blog.Entity.csproj.AssemblyReference.cache
+/home/muradmt/Public/Blog/Blog.Entity/obj/Debug/net8.0/Blog.Entity.GeneratedMSBuildEditorConfig.editorconfig
+/home/muradmt/Public/Blog/Blog.Entity/obj/Debug/net8.0/Blog.Entity.AssemblyInfoInputs.cache
+/home/muradmt/Public/Blog/Blog.Entity/obj/Debug/net8.0/Blog.Entity.AssemblyInfo.cs
+/home/muradmt/Public/Blog/Blog.Entity/obj/Debug/net8.0/Blog.Entity.csproj.CoreCompileInputs.cache
+/home/muradmt/Public/Blog/Blog.Entity/obj/Debug/net8.0/Blog.Entity.sourcelink.json
+/home/muradmt/Public/Blog/Blog.Entity/obj/Debug/net8.0/Blog.Ent.4E135DA9.Up2Date
+/home/muradmt/Public/Blog/Blog.Entity/obj/Debug/net8.0/Blog.Entity.dll
+/home/muradmt/Public/Blog/Blog.Entity/obj/Debug/net8.0/refint/Blog.Entity.dll
+/home/muradmt/Public/Blog/Blog.Entity/obj/Debug/net8.0/Blog.Entity.pdb
+/home/muradmt/Public/Blog/Blog.Entity/obj/Debug/net8.0/ref/Blog.Entity.dll

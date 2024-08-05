@@ -1,0 +1,12 @@
+/home/muradmt/Public/Blog/Blog.Service/bin/Debug/net8.0/Blog.Service.deps.json
+/home/muradmt/Public/Blog/Blog.Service/bin/Debug/net8.0/Blog.Service.dll
+/home/muradmt/Public/Blog/Blog.Service/bin/Debug/net8.0/Blog.Service.pdb
+/home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/Blog.Service.GeneratedMSBuildEditorConfig.editorconfig
+/home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/Blog.Service.AssemblyInfoInputs.cache
+/home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/Blog.Service.AssemblyInfo.cs
+/home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/Blog.Service.csproj.CoreCompileInputs.cache
+/home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/Blog.Service.sourcelink.json
+/home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/Blog.Service.dll
+/home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/refint/Blog.Service.dll
+/home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/Blog.Service.pdb
+/home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/ref/Blog.Service.dll
