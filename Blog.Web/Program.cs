@@ -1,4 +1,5 @@
 using Blog.Data.Context;
+using Blog.Data.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,7 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(opt=>
     opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
+builder.Services.LoadDataLayerExtension(builder.Configuration);
 
 var app = builder.Build();
 
