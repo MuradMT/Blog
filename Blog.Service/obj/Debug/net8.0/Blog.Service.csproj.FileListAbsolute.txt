@@ -10,3 +10,11 @@
 /home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/refint/Blog.Service.dll
 /home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/Blog.Service.pdb
 /home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/ref/Blog.Service.dll
+/home/muradmt/Public/Blog/Blog.Service/bin/Debug/net8.0/Blog.Core.dll
+/home/muradmt/Public/Blog/Blog.Service/bin/Debug/net8.0/Blog.Data.dll
+/home/muradmt/Public/Blog/Blog.Service/bin/Debug/net8.0/Blog.Entity.dll
+/home/muradmt/Public/Blog/Blog.Service/bin/Debug/net8.0/Blog.Data.pdb
+/home/muradmt/Public/Blog/Blog.Service/bin/Debug/net8.0/Blog.Entity.pdb
+/home/muradmt/Public/Blog/Blog.Service/bin/Debug/net8.0/Blog.Core.pdb
+/home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/Blog.Service.csproj.AssemblyReference.cache
+/home/muradmt/Public/Blog/Blog.Service/obj/Debug/net8.0/Blog.Ser.A0DBEB3C.Up2Date

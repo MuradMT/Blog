@@ -1,13 +1,16 @@
 using Blog.Data.Context;
 using Blog.Data.Extensions;
+using Blog.Service.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-
 builder.Services.LoadDataLayerExtension(builder.Configuration);
+builder.Services.LoadServiceLayerExtension();
+// Add services to the container.
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+
 
 var app = builder.Build();
 
@@ -26,8 +29,19 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+// app.MapControllerRoute(
+//     name: "default",
+//     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.UseEndpoints(endpoint =>
+{
+    endpoint.MapAreaControllerRoute(
+        name:"Admin",
+        areaName:"Admin",
+        pattern:"Admin/{controller=Home}/{action=Index}/{id?}"
+        );
+    endpoint.MapDefaultControllerRoute();
+    
+});
 
 app.Run();
