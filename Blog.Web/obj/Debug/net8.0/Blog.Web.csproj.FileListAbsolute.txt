@@ -565,3 +565,4 @@
 /home/muradmt/Public/Blog/Blog.Web/bin/Debug/net8.0/MyTested.AspNetCore.Mvc.ViewData.dll
 /home/muradmt/Public/Blog/Blog.Web/bin/Debug/net8.0/MyTested.AspNetCore.Mvc.ViewFeatures.dll
 /home/muradmt/Public/Blog/Blog.Web/obj/Debug/net8.0/Blog.Web.MvcApplicationPartsAssemblyInfo.cs
+/home/muradmt/Public/Blog/Blog.Web/bin/Debug/net8.0/AutoMapper.dll

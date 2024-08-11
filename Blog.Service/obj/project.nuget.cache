@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Yaqfdj/FDixcpk6Jp10XfM/5QqVVeYNwPQy3dsBI51TglIa5l1++e/Ve7/S/Q4F0ILBFaUewE5FDXJz3PzDvFQ==",
+  "dgSpecHash": "H5fPwxjklwL0afTxWZ0Jax7jVmuyMvOkVPJNOxeIyI1Z4Wu7EsvlqCdjUw2LMOc0E9FMaQgPDdVMib/I9h6LLw==",
   "success": true,
   "projectFilePath": "/home/muradmt/Public/Blog/Blog.Service/Blog.Service.csproj",
   "expectedPackageFiles": [
+    "/home/muradmt/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/home/muradmt/.nuget/packages/microsoft.entityframeworkcore/8.0.7/microsoft.entityframeworkcore.8.0.7.nupkg.sha512",
     "/home/muradmt/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.7/microsoft.entityframeworkcore.abstractions.8.0.7.nupkg.sha512",
     "/home/muradmt/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.7/microsoft.entityframeworkcore.analyzers.8.0.7.nupkg.sha512",

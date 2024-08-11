@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DgfPurvJ7dObPkwmSrKAReuBbmpjZtfpId3qHC9xk5fz82w+dqQajTMYhfMdKGYmloc/UyK/psQZ92fcP+YB9w==",
+  "dgSpecHash": "tOHarQAl14x+A44dZ7Zl718v7FfkXuqCMD8hF4+xNW3q3HMqjsTAIC4SA6Vq4JMn7+OZTkSGCQDyAM3Q9B35ag==",
   "success": true,
   "projectFilePath": "/home/muradmt/Public/Blog/Blog.Web/Blog.Web.csproj",
   "expectedPackageFiles": [
+    "/home/muradmt/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/home/muradmt/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/home/muradmt/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/muradmt/.nuget/packages/humanizer.core.af/2.14.1/humanizer.core.af.2.14.1.nupkg.sha512",
