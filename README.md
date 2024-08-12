@@ -17,6 +17,7 @@ This is a blog application built using ASP.NET Web MVC, utilizing an N-Tier arch
 - Uploading picture
 
 ## Technologies Used
+- C#
 - ASP.NET MVC
 - Entity Framework
 - Postgres Sql
