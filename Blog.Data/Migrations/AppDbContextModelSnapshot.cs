@@ -79,11 +79,11 @@ namespace Blog.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("045223ad-c51b-484d-b5fb-658185ff1229"),
+                            Id = new Guid("1202ea09-daea-447f-a519-fc9fbfbc3245"),
                             CategoryId = new Guid("dfb950ad-e959-463f-ab3f-84658d5d4695"),
                             Content = "Asp.net core lorem ipsum dolor solet",
                             CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2024, 8, 6, 19, 13, 18, 295, DateTimeKind.Utc).AddTicks(7422),
+                            CreatedDate = new DateTime(2024, 8, 13, 18, 41, 40, 645, DateTimeKind.Utc).AddTicks(7832),
                             DeletedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ImageId = new Guid("3224267d-94e7-4501-a7f3-0d376c3060a7"),
                             IsDeleted = false,
@@ -93,11 +93,11 @@ namespace Blog.Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("69910679-3c89-4fba-899d-1328ef70d89c"),
+                            Id = new Guid("f5727d75-924b-4637-8a91-159ac1baea15"),
                             CategoryId = new Guid("5d54ba1a-6f8a-410d-9a92-8800feea5415"),
                             Content = "visual studio lorem ipsum dolor solet",
                             CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2024, 8, 6, 19, 13, 18, 295, DateTimeKind.Utc).AddTicks(7443),
+                            CreatedDate = new DateTime(2024, 8, 13, 18, 41, 40, 645, DateTimeKind.Utc).AddTicks(7853),
                             DeletedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ImageId = new Guid("4a34a0a9-367c-4a27-918d-4782c48a6384"),
                             IsDeleted = false,
@@ -148,7 +148,7 @@ namespace Blog.Data.Migrations
                         {
                             Id = new Guid("dfb950ad-e959-463f-ab3f-84658d5d4695"),
                             CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2024, 8, 6, 19, 13, 18, 295, DateTimeKind.Utc).AddTicks(9390),
+                            CreatedDate = new DateTime(2024, 8, 13, 18, 41, 40, 645, DateTimeKind.Utc).AddTicks(9671),
                             DeletedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -158,7 +158,7 @@ namespace Blog.Data.Migrations
                         {
                             Id = new Guid("5d54ba1a-6f8a-410d-9a92-8800feea5415"),
                             CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2024, 8, 6, 19, 13, 18, 295, DateTimeKind.Utc).AddTicks(9403),
+                            CreatedDate = new DateTime(2024, 8, 13, 18, 41, 40, 645, DateTimeKind.Utc).AddTicks(9684),
                             DeletedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -211,7 +211,7 @@ namespace Blog.Data.Migrations
                         {
                             Id = new Guid("3224267d-94e7-4501-a7f3-0d376c3060a7"),
                             CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2024, 8, 6, 19, 13, 18, 296, DateTimeKind.Utc).AddTicks(952),
+                            CreatedDate = new DateTime(2024, 8, 13, 18, 41, 40, 646, DateTimeKind.Utc).AddTicks(1475),
                             DeletedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FileName = "images/testimage",
                             FileType = "jpg",
@@ -222,7 +222,7 @@ namespace Blog.Data.Migrations
                         {
                             Id = new Guid("4a34a0a9-367c-4a27-918d-4782c48a6384"),
                             CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2024, 8, 6, 19, 13, 18, 296, DateTimeKind.Utc).AddTicks(967),
+                            CreatedDate = new DateTime(2024, 8, 13, 18, 41, 40, 646, DateTimeKind.Utc).AddTicks(1490),
                             DeletedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FileName = "images/vstest",
                             FileType = "png",
