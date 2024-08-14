@@ -56,7 +56,8 @@ public class UserConfiguration:IEntityTypeConfiguration<AppUser>
                 LastName = "Mammadzada",
                 PhoneNumberConfirmed = true,
                 EmailConfirmed = true,
-                SecurityStamp = Guid.NewGuid().ToString()
+                SecurityStamp = Guid.NewGuid().ToString(),
+                ImageId = Guid.Parse("3224267D-94E7-4501-A7F3-0D376C3060A7")
             };
             superAdmin.PasswordHash = GenerateHashedPassword(superAdmin, "123456");
             
@@ -72,7 +73,8 @@ public class UserConfiguration:IEntityTypeConfiguration<AppUser>
                 LastName = "AdminUser",
                 PhoneNumberConfirmed = false,
                 EmailConfirmed = false,
-                SecurityStamp = Guid.NewGuid().ToString()
+                SecurityStamp = Guid.NewGuid().ToString(),
+                ImageId = Guid.Parse("3224267D-94E7-4501-A7F3-0D376C3060A7")
             };
             normalAdmin.PasswordHash = GenerateHashedPassword(normalAdmin, "1234567");
             
@@ -88,7 +90,8 @@ public class UserConfiguration:IEntityTypeConfiguration<AppUser>
                 LastName = "NormalUser",
                 PhoneNumberConfirmed = false,
                 EmailConfirmed = false,
-                SecurityStamp = Guid.NewGuid().ToString()
+                SecurityStamp = Guid.NewGuid().ToString(),
+                ImageId = Guid.Parse("3224267D-94E7-4501-A7F3-0D376C3060A7")
             };
             normalUser.PasswordHash = GenerateHashedPassword(normalUser, "12345678");
 

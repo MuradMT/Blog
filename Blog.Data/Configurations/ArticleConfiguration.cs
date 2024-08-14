@@ -20,7 +20,8 @@ public class ArticleConfiguration:IEntityTypeConfiguration<Article>
                  ImageId = Guid.Parse("3224267D-94E7-4501-A7F3-0D376C3060A7"),
                  CreatedBy = "Admin Test",
                  CreatedDate = DateTime.UtcNow,
-                 IsDeleted = false
+                 IsDeleted = false,
+                 UserId = Guid.Parse("52D21BCA-C91C-41E6-BB26-F2E5C33E2A46")
             },
             new Article()
             {
@@ -32,7 +33,8 @@ public class ArticleConfiguration:IEntityTypeConfiguration<Article>
                 ImageId = Guid.Parse("4A34A0A9-367C-4A27-918D-4782C48A6384"),
                 CreatedBy = "Admin Test",
                 CreatedDate = DateTime.UtcNow,
-                IsDeleted = false
+                IsDeleted = false,
+                UserId = Guid.Parse("E9EDE6B0-9D0D-48B1-A4A0-05FD5130E067")
             }
         );
     }
