@@ -136,7 +136,10 @@
       },
       "Blog.Core/1.0.0": {
         "runtime": {
-          "Blog.Core.dll": {}
+          "Blog.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

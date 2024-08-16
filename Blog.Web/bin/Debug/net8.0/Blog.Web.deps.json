@@ -2595,7 +2595,10 @@
       },
       "Blog.Core/1.0.0": {
         "runtime": {
-          "Blog.Core.dll": {}
+          "Blog.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "Blog.Core.dll": {}
@@ -2609,7 +2612,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4"
         },
         "runtime": {
-          "Blog.Data.dll": {}
+          "Blog.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "Blog.Data.dll": {}
@@ -2621,7 +2627,10 @@
           "Microsoft.Extensions.Identity.Stores": "8.0.7"
         },
         "runtime": {
-          "Blog.Entity.dll": {}
+          "Blog.Entity.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "Blog.Entity.dll": {}
@@ -2634,7 +2643,10 @@
           "Blog.Entity": "1.0.0"
         },
         "runtime": {
-          "Blog.Service.dll": {}
+          "Blog.Service.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "Blog.Service.dll": {}
