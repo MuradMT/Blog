@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/home/muradmt/Public/Blog/Blog.Web/Blog.Web.csproj": {}
+    "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Blog.Web.csproj": {}
   },
   "projects": {
-    "/home/muradmt/Public/Blog/Blog.Core/Blog.Core.csproj": {
+    "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Core\\Blog.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/muradmt/Public/Blog/Blog.Core/Blog.Core.csproj",
+        "projectUniqueName": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Core\\Blog.Core.csproj",
         "projectName": "Blog.Core",
-        "projectPath": "/home/muradmt/Public/Blog/Blog.Core/Blog.Core.csproj",
-        "packagesPath": "/home/muradmt/.nuget/packages/",
-        "outputPath": "/home/muradmt/Public/Blog/Blog.Core/obj/",
+        "projectPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Core\\Blog.Core.csproj",
+        "packagesPath": "C:\\Users\\mamma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/muradmt/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,34 +61,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/250/sdk/8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/muradmt/Public/Blog/Blog.Data/Blog.Data.csproj": {
+    "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Data\\Blog.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/muradmt/Public/Blog/Blog.Data/Blog.Data.csproj",
+        "projectUniqueName": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Data\\Blog.Data.csproj",
         "projectName": "Blog.Data",
-        "projectPath": "/home/muradmt/Public/Blog/Blog.Data/Blog.Data.csproj",
-        "packagesPath": "/home/muradmt/.nuget/packages/",
-        "outputPath": "/home/muradmt/Public/Blog/Blog.Data/obj/",
+        "projectPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Data\\Blog.Data.csproj",
+        "packagesPath": "C:\\Users\\mamma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/muradmt/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/muradmt/Public/Blog/Blog.Entity/Blog.Entity.csproj": {
-                "projectPath": "/home/muradmt/Public/Blog/Blog.Entity/Blog.Entity.csproj"
+              "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Entity\\Blog.Entity.csproj": {
+                "projectPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Entity\\Blog.Entity.csproj"
               }
             }
           }
@@ -146,34 +152,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/250/sdk/8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/muradmt/Public/Blog/Blog.Entity/Blog.Entity.csproj": {
+    "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Entity\\Blog.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/muradmt/Public/Blog/Blog.Entity/Blog.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Entity\\Blog.Entity.csproj",
         "projectName": "Blog.Entity",
-        "projectPath": "/home/muradmt/Public/Blog/Blog.Entity/Blog.Entity.csproj",
-        "packagesPath": "/home/muradmt/.nuget/packages/",
-        "outputPath": "/home/muradmt/Public/Blog/Blog.Entity/obj/",
+        "projectPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Entity\\Blog.Entity.csproj",
+        "packagesPath": "C:\\Users\\mamma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/muradmt/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/muradmt/Public/Blog/Blog.Core/Blog.Core.csproj": {
-                "projectPath": "/home/muradmt/Public/Blog/Blog.Core/Blog.Core.csproj"
+              "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Core\\Blog.Core.csproj": {
+                "projectPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Core\\Blog.Core.csproj"
               }
             }
           }
@@ -214,37 +223,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/250/sdk/8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/muradmt/Public/Blog/Blog.Service/Blog.Service.csproj": {
+    "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Service\\Blog.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/muradmt/Public/Blog/Blog.Service/Blog.Service.csproj",
+        "projectUniqueName": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Service\\Blog.Service.csproj",
         "projectName": "Blog.Service",
-        "projectPath": "/home/muradmt/Public/Blog/Blog.Service/Blog.Service.csproj",
-        "packagesPath": "/home/muradmt/.nuget/packages/",
-        "outputPath": "/home/muradmt/Public/Blog/Blog.Service/obj/",
+        "projectPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Service\\Blog.Service.csproj",
+        "packagesPath": "C:\\Users\\mamma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/muradmt/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/muradmt/Public/Blog/Blog.Data/Blog.Data.csproj": {
-                "projectPath": "/home/muradmt/Public/Blog/Blog.Data/Blog.Data.csproj"
+              "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Data\\Blog.Data.csproj": {
+                "projectPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Data\\Blog.Data.csproj"
               },
-              "/home/muradmt/Public/Blog/Blog.Entity/Blog.Entity.csproj": {
-                "projectPath": "/home/muradmt/Public/Blog/Blog.Entity/Blog.Entity.csproj"
+              "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Entity\\Blog.Entity.csproj": {
+                "projectPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Entity\\Blog.Entity.csproj"
               }
             }
           }
@@ -285,37 +297,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/250/sdk/8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/muradmt/Public/Blog/Blog.Web/Blog.Web.csproj": {
+    "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Blog.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/muradmt/Public/Blog/Blog.Web/Blog.Web.csproj",
+        "projectUniqueName": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Blog.Web.csproj",
         "projectName": "Blog.Web",
-        "projectPath": "/home/muradmt/Public/Blog/Blog.Web/Blog.Web.csproj",
-        "packagesPath": "/home/muradmt/.nuget/packages/",
-        "outputPath": "/home/muradmt/Public/Blog/Blog.Web/obj/",
+        "projectPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Blog.Web.csproj",
+        "packagesPath": "C:\\Users\\mamma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/muradmt/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/muradmt/Public/Blog/Blog.Data/Blog.Data.csproj": {
-                "projectPath": "/home/muradmt/Public/Blog/Blog.Data/Blog.Data.csproj"
+              "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Data\\Blog.Data.csproj": {
+                "projectPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Data\\Blog.Data.csproj"
               },
-              "/home/muradmt/Public/Blog/Blog.Service/Blog.Service.csproj": {
-                "projectPath": "/home/muradmt/Public/Blog/Blog.Service/Blog.Service.csproj"
+              "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Service\\Blog.Service.csproj": {
+                "projectPath": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Service\\Blog.Service.csproj"
               }
             }
           }
@@ -377,7 +392,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/250/sdk/8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
