@@ -13,7 +13,7 @@ public static class DataLayerExtension
     public static IServiceCollection LoadDataLayerExtension(this IServiceCollection services,IConfiguration configuration)
     {
         services.AddDbContext<AppDbContext>(opt=>
-            opt.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+            opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
         services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         return services;

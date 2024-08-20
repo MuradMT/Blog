@@ -39,7 +39,7 @@ builder.Services.ConfigureApplicationCookie(config =>
         SecurePolicy = CookieSecurePolicy.SameAsRequest//in production choose always
     };
     config.SlidingExpiration = true;
-    config.ExpireTimeSpan=TimeSpan.FromDays(7);
+    config.ExpireTimeSpan = TimeSpan.FromDays(7);
     config.AccessDeniedPath = new PathString("/Admin/Auth/AccessDenied");
 });
 
@@ -69,15 +69,22 @@ app.UseAuthorization();
 //     name: "default",
 //     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.UseEndpoints(endpoint =>
-{
-    endpoint.MapAreaControllerRoute(
-        name:"Admin",
-        areaName:"Admin",
-        pattern:"Admin/{controller=Home}/{action=Index}/{id?}"
-        );
-    endpoint.MapDefaultControllerRoute();
-    
-});
+// app.UseEndpoints(endpoint =>
+// {
+//     endpoint.MapAreaControllerRoute(
+//         name:"Admin",
+//         areaName:"Admin",
+//         pattern:"Admin/{controller=Home}/{action=Index}/{id?}"
+//         );
+//     endpoint.MapDefaultControllerRoute();
+
+// });
+app.MapAreaControllerRoute
+(
+    name: "Admin",
+    areaName: "Admin",
+    pattern: "Admin/{controller=Home}/{action=Index}/{id?}"
+);
+app.MapDefaultControllerRoute();
 
 app.Run();

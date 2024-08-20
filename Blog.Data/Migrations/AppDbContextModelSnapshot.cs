@@ -3,8 +3,8 @@ using System;
 using Blog.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
@@ -18,33 +18,34 @@ namespace Blog.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "8.0.7")
-                .HasAnnotation("Relational:MaxIdentifierLength", 63);
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.Entity("Blog.Entity.Entities.AppRole", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasMaxLength(256)
-                        .HasColumnType("character varying(256)");
+                        .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("NormalizedName")
                         .HasMaxLength(256)
-                        .HasColumnType("character varying(256)");
+                        .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedName")
                         .IsUnique()
-                        .HasDatabaseName("RoleNameIndex");
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
 
@@ -52,21 +53,21 @@ namespace Blog.Data.Migrations
                         new
                         {
                             Id = new Guid("f2917c68-b590-4ddc-bdf3-510936428c1e"),
-                            ConcurrencyStamp = "f4c5f629-bb96-4024-8829-a3633e08b067",
+                            ConcurrencyStamp = "db27e782-9d25-4997-9bf7-572c6f0c7cb2",
                             Name = "Super Admin",
                             NormalizedName = "SUPER ADMIN"
                         },
                         new
                         {
                             Id = new Guid("2150ecc7-ea01-4d39-bce2-3f4e68cb2692"),
-                            ConcurrencyStamp = "8432e266-cd2d-4609-aecf-89ffb918b3bd",
+                            ConcurrencyStamp = "9a296164-5ea8-4976-94b8-1a72954e699f",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = new Guid("9dc8b41e-7de2-48be-9915-f71d0a8bc06e"),
-                            ConcurrencyStamp = "e7a37f97-4065-44a7-9cce-fa5dd7e22cbc",
+                            ConcurrencyStamp = "d2034491-378d-4d42-bc6f-4465af996d45",
                             Name = "User",
                             NormalizedName = "User"
                         });
@@ -76,18 +77,18 @@ namespace Blog.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("ClaimType")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ClaimValue")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("RoleId")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -100,65 +101,65 @@ namespace Blog.Data.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("AccessFailedCount")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
-                        .HasColumnType("character varying(256)");
+                        .HasColumnType("nvarchar(256)");
 
                     b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("boolean");
+                        .HasColumnType("bit");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("ImageId")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("boolean");
+                        .HasColumnType("bit");
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("datetimeoffset");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
-                        .HasColumnType("character varying(256)");
+                        .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("NormalizedUserName")
                         .HasMaxLength(256)
-                        .HasColumnType("character varying(256)");
+                        .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("PasswordHash")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("boolean");
+                        .HasColumnType("bit");
 
                     b.Property<string>("SecurityStamp")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("boolean");
+                        .HasColumnType("bit");
 
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
-                        .HasColumnType("character varying(256)");
+                        .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
 
@@ -169,7 +170,8 @@ namespace Blog.Data.Migrations
 
                     b.HasIndex("NormalizedUserName")
                         .IsUnique()
-                        .HasDatabaseName("UserNameIndex");
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
 
@@ -178,7 +180,7 @@ namespace Blog.Data.Migrations
                         {
                             Id = new Guid("52d21bca-c91c-41e6-bb26-f2e5c33e2a46"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b4932b18-9e09-4ec4-a2eb-dcfe81a0955a",
+                            ConcurrencyStamp = "045233e9-9eb0-420b-955e-542957d767f3",
                             Email = "superadmin@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Murad",
@@ -187,10 +189,10 @@ namespace Blog.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "SUPERADMIN@GMAIL.COM",
                             NormalizedUserName = "SUPERADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOsWY+sO5QyYCeXlezqUUTtWa2Rhp+iehjUa2b8K7axAZPBHnQzw7/mycUdOoVkb+A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGjMbHPUfRi0i5WdPcauICCKsrcttFfBYOn+BLSGAmwkxyVV5DT92GLbeOunNqJHRw==",
                             PhoneNumber = "+994991234567",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "3fe59991-ee9f-409a-b86b-bb9a2931d313",
+                            SecurityStamp = "db27a1a1-12e9-492c-a977-b8d5af87f287",
                             TwoFactorEnabled = false,
                             UserName = "superadmin@gmail.com"
                         },
@@ -198,7 +200,7 @@ namespace Blog.Data.Migrations
                         {
                             Id = new Guid("e9ede6b0-9d0d-48b1-a4a0-05fd5130e067"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "67109736-6b4c-49d7-a18d-971d6a9999e4",
+                            ConcurrencyStamp = "e58bc3b3-380c-48cd-94b5-a00b0499a049",
                             Email = "admin@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "Admin",
@@ -207,10 +209,10 @@ namespace Blog.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPRv8vsEtKAIUvgakX7nr7b8TgF9UO1+qVY9ZCAf5nU/g4UULUY9ZenQ2xQcfGzeuQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAIoFpjQLyzuw59fIlGQ8D52Y0xCuuYWRPRaSphL9hi91ERCkCfiHa87OIVrA58+VQ==",
                             PhoneNumber = "+994991234566",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "c6e47af0-e9c0-47e4-9730-11d27d31d0aa",
+                            SecurityStamp = "34ed7a6e-8e68-49a0-a510-6586344157aa",
                             TwoFactorEnabled = false,
                             UserName = "admin@gmail.com"
                         },
@@ -218,7 +220,7 @@ namespace Blog.Data.Migrations
                         {
                             Id = new Guid("bb668e51-6f7e-4d1f-9e9f-0b842761c120"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "376dde55-138b-459d-bd4c-9753872b28ce",
+                            ConcurrencyStamp = "d189a906-6be1-4242-a6e1-dc76866136be",
                             Email = "user@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "User",
@@ -227,10 +229,10 @@ namespace Blog.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@GMAIL.COM",
                             NormalizedUserName = "USER@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOIVhVOuuw9E0qfzyLUTqV0itdQ/IqCv/lHbXG9jnuKhLbUkLBkcsqDmsiKpNkZwGg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEK1gRGUvmPBjf3aBGfGoBNtpDW4zpRz0lKkjJwRiPWAvriD4dDrPG1PJHir7ZX9t6w==",
                             PhoneNumber = "+994991234565",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ae9a63d5-491e-440c-bf49-fdd7e44f284b",
+                            SecurityStamp = "795f07f0-4242-4b73-ba13-324b59addb93",
                             TwoFactorEnabled = false,
                             UserName = "user@gmail.com"
                         });
@@ -240,18 +242,18 @@ namespace Blog.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("ClaimType")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ClaimValue")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -264,17 +266,17 @@ namespace Blog.Data.Migrations
                 {
                     b.Property<string>("LoginProvider")
                         .HasMaxLength(128)
-                        .HasColumnType("character varying(128)");
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("ProviderKey")
                         .HasMaxLength(128)
-                        .HasColumnType("character varying(128)");
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("ProviderDisplayName")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("LoginProvider", "ProviderKey");
 
@@ -286,10 +288,10 @@ namespace Blog.Data.Migrations
             modelBuilder.Entity("Blog.Entity.Entities.AppUserRole", b =>
                 {
                     b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("RoleId")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("UserId", "RoleId");
 
@@ -318,16 +320,16 @@ namespace Blog.Data.Migrations
             modelBuilder.Entity("Blog.Entity.Entities.AppUserToken", b =>
                 {
                     b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId", "LoginProvider", "Name");
 
@@ -338,50 +340,50 @@ namespace Blog.Data.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("CategoryId")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Content")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("DeletedBy")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DeletedDate")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("ImageId")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
+                        .HasColumnType("bit");
 
                     b.Property<string>("ModifiedBy")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(150)
-                        .HasColumnType("character varying(150)");
+                        .HasColumnType("nvarchar(150)");
 
                     b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("ViewCount")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -396,11 +398,11 @@ namespace Blog.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("66efa612-4278-491e-bf82-cd5156b0ec9f"),
+                            Id = new Guid("184e54ac-75ac-4a2c-9c9c-bc6a9513a117"),
                             CategoryId = new Guid("dfb950ad-e959-463f-ab3f-84658d5d4695"),
                             Content = "Asp.net core lorem ipsum dolor solet",
                             CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2024, 8, 14, 13, 36, 24, 647, DateTimeKind.Utc).AddTicks(9546),
+                            CreatedDate = new DateTime(2024, 8, 20, 13, 32, 19, 157, DateTimeKind.Utc).AddTicks(8118),
                             DeletedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ImageId = new Guid("3224267d-94e7-4501-a7f3-0d376c3060a7"),
                             IsDeleted = false,
@@ -411,11 +413,11 @@ namespace Blog.Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("fa34ba57-557f-4625-984b-e13742ffddfd"),
+                            Id = new Guid("be57440b-76ec-4ac6-8bad-f3a68018a7c4"),
                             CategoryId = new Guid("5d54ba1a-6f8a-410d-9a92-8800feea5415"),
                             Content = "visual studio lorem ipsum dolor solet",
                             CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2024, 8, 14, 13, 36, 24, 647, DateTimeKind.Utc).AddTicks(9561),
+                            CreatedDate = new DateTime(2024, 8, 20, 13, 32, 19, 157, DateTimeKind.Utc).AddTicks(8124),
                             DeletedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ImageId = new Guid("4a34a0a9-367c-4a27-918d-4782c48a6384"),
                             IsDeleted = false,
@@ -430,33 +432,33 @@ namespace Blog.Data.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("DeletedBy")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DeletedDate")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
+                        .HasColumnType("bit");
 
                     b.Property<string>("ModifiedBy")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -467,7 +469,7 @@ namespace Blog.Data.Migrations
                         {
                             Id = new Guid("dfb950ad-e959-463f-ab3f-84658d5d4695"),
                             CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2024, 8, 14, 13, 36, 24, 648, DateTimeKind.Utc).AddTicks(852),
+                            CreatedDate = new DateTime(2024, 8, 20, 13, 32, 19, 157, DateTimeKind.Utc).AddTicks(9374),
                             DeletedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -477,7 +479,7 @@ namespace Blog.Data.Migrations
                         {
                             Id = new Guid("5d54ba1a-6f8a-410d-9a92-8800feea5415"),
                             CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2024, 8, 14, 13, 36, 24, 648, DateTimeKind.Utc).AddTicks(860),
+                            CreatedDate = new DateTime(2024, 8, 20, 13, 32, 19, 157, DateTimeKind.Utc).AddTicks(9388),
                             DeletedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -489,37 +491,37 @@ namespace Blog.Data.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("DeletedBy")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DeletedDate")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("FileName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FileType")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
+                        .HasColumnType("bit");
 
                     b.Property<string>("ModifiedBy")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -530,7 +532,7 @@ namespace Blog.Data.Migrations
                         {
                             Id = new Guid("3224267d-94e7-4501-a7f3-0d376c3060a7"),
                             CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2024, 8, 14, 13, 36, 24, 648, DateTimeKind.Utc).AddTicks(1883),
+                            CreatedDate = new DateTime(2024, 8, 20, 13, 32, 19, 158, DateTimeKind.Utc).AddTicks(427),
                             DeletedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FileName = "images/testimage",
                             FileType = "jpg",
@@ -541,7 +543,7 @@ namespace Blog.Data.Migrations
                         {
                             Id = new Guid("4a34a0a9-367c-4a27-918d-4782c48a6384"),
                             CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2024, 8, 14, 13, 36, 24, 648, DateTimeKind.Utc).AddTicks(1892),
+                            CreatedDate = new DateTime(2024, 8, 20, 13, 32, 19, 158, DateTimeKind.Utc).AddTicks(430),
                             DeletedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FileName = "images/vstest",
                             FileType = "png",
