@@ -3,36 +3,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <html lang="en" class="light-style layout-menu-fixed layout-compact " dir="ltr" data-theme="theme-default"  data-template="vertical-menu-template-free" data-style="light">
 
   <head>
@@ -461,10 +431,9 @@
 
   <!-- Page JS -->
   <script src="~/sneat/assets/js/dashboards-analytics.js"></script>
-  
   <!-- Place this tag before closing body tag for github widget button. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
-  
+    @await RenderSectionAsync("Scripts", false);
 </body>
 
 </html>
