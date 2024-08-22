@@ -1,10 +1,19 @@
-<div class="d-flex justify-content-lg-center  my-3 mx-3">
+﻿@model IList<ArticleDto>
 
+<div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4">
+        <span class="text-muted fw-light">Article Management /</span> Articles
+    </h4>
 
+    <!-- Basic Bootstrap Table -->
     <div class="card">
-        <h5 class="card-header">Article Management</h5>
-        <div class="table-responsive text-nowrap">
-            <table class="table table-bordered id="articlesTable" width="100%" cellspacing="0">
+        <div class="table-responsive text-nowrap m-5">
+
+            <a class="btn btn-success mb-3" asp-area="Admin" asp-controller="Article" asp-action="Add">
+                Add Article <i class="bx bx-plus"></i>
+            </a>
+
+            <table class="table table-bordered" id="articlesTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
                         <th>Title</th>
@@ -26,15 +35,38 @@
                     </tr>
                 </tfoot>
                 <tbody class="table-border-bottom-0">
-                   
+                    @foreach (var article in Model)
+
+
+
+
+
+
+
+                    {
+                        <tr name="@article.Id">
+                            <td>@article.Title</td>
+                            <td>@article.Category.Name</td>
+                            <td>@article.CreatedDate.ToShortDateString()</td>
+                            <td>@article.CreatedBy</td>
+                            <td>@(article.IsDeleted ? "Aktif Değil" : "Aktif")</td>
+                            <td>
+                                <a class="btn btn-primary btn-sm" data-id="@article.Id" asp-area="Admin" asp-controller="Article" asp-action="Update" asp-route-articleId="@article.Id"><i class="bx bxs-edit"></i></a>
+
+                            </td>
+                        </tr>
+                    }
                 </tbody>
             </table>
         </div>
     </div>
+    <!--/ Basic Bootstrap Table -->
+
+
+
 
 </div>
 
-@section Scripts{
-    <script src="~/js/articleIndex.js" type="application/ecmascript"></script>
-}
-  
+@section scripts {
+      <script src="~/js/articleindex.js" type="application/ecmascript"></script>
+  }

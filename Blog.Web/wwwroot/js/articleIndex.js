@@ -8,32 +8,32 @@
         ],
         language: {
             "sDecimal": ",",
-            "sEmptyTable": "Tabloda herhangi bir veri mevcut değil",
-            "sInfo": "_TOTAL_ kayıttan _START_ - _END_ arasındaki kayıtlar gösteriliyor",
-            "sInfoEmpty": "Kayıt yok",
-            "sInfoFiltered": "(_MAX_ kayıt içerisinden bulunan)",
+            "sEmptyTable": "There is no data in the table",
+            "sInfo": "Showing records from _START_ to _END_ of _TOTAL_ records",
+            "sInfoEmpty": "No record",
+            "sInfoFiltered": "(Found in _MAX_ records)",
             "sInfoPostFix": "",
             "sInfoThousands": ".",
-            "sLengthMenu": "Sayfada _MENU_ kayıt göster",
-            "sLoadingRecords": "Yükleniyor...",
-            "sProcessing": "İşleniyor...",
-            "sSearch": "Ara:",
-            "sZeroRecords": "Eşleşen kayıt bulunamadı",
+            "sLengthMenu": "Show _MENU_ record in page",
+            "sLoadingRecords": "Loading...",
+            "sProcessing": "Processing...",
+            "sSearch": "Search:",
+            "sZeroRecords": "No matching records found",
             "oPaginate": {
-                "sFirst": "İlk",
-                "sLast": "Son",
-                "sNext": "Sonraki",
-                "sPrevious": "Önceki"
+                "sFirst": "First",
+                "sLast": "Last",
+                "sNext": "Next",
+                "sPrevious": "Previous"
             },
             "oAria": {
-                "sSortAscending": ": artan sütun sıralamasını aktifleştir",
-                "sSortDescending": ": azalan sütun sıralamasını aktifleştir"
+                "sSortAscending": ": Activate ascending order",
+                "sSortDescending": ": Activate descending order"
             },
             "select": {
                 "rows": {
-                    "_": "%d kayıt seçildi",
+                    "_": "%d record selected",
                     "0": "",
-                    "1": "1 kayıt seçildi"
+                    "1": "1 record selected"
                 }
             }
         }

@@ -11,7 +11,7 @@ namespace Blog.Web.Areas.Admin.Controllers
         // GET: HomeController
         public async Task<IActionResult> Index()
         {
-            var articles = await _articleService.GetAllArticlesAsync();
+            var articles = await _articleService.GetAllArticlesWithCategoriesNotDeletedAsync();
             return View(articles);
         }
 

@@ -1,13 +1,16 @@
+using Blog.Service.Services.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Blog.Web.Areas.Admin.Controllers;
 
 [Area("Admin")]
-public class ArticleController : Controller
+public class ArticleController(IArticleService 
+    _articleService): Controller
 {
     // GET
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        var result= await _articleService.GetAllArticlesWithCategoriesNotDeletedAsync();
+        return View(result);
     }
 }

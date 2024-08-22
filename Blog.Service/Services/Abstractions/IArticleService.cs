@@ -5,5 +5,5 @@ namespace Blog.Service.Services.Abstractions;
 
 public interface IArticleService
 {
-    Task<IList<ArticleDto>> GetAllArticlesAsync();
+    Task<IList<ArticleDto>> GetAllArticlesWithCategoriesNotDeletedAsync();
 }

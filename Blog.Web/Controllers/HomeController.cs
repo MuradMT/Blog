@@ -9,7 +9,7 @@ public class HomeController(ILogger<HomeController> _logger,IArticleService _art
 {
     public async Task<IActionResult> Index()
     {
-        var articles = await _articleService.GetAllArticlesAsync();
+        var articles = await _articleService.GetAllArticlesWithCategoriesNotDeletedAsync();
         return View(articles);
     }
 
