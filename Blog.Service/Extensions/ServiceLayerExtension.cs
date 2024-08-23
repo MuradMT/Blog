@@ -10,6 +10,7 @@ public static class ServiceLayerExtension
     public static IServiceCollection LoadServiceLayerExtension(this IServiceCollection services)
     {
         services.AddScoped<IArticleService,ArticleService>();
+        services.AddScoped<ICategoryService,CategoryService>();
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
         return services;
     }

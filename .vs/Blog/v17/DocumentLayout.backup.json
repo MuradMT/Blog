@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\mamma\\source\\repos\\Blog\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|c:\\users\\mamma\\source\\repos\\blog\\blog.web\\wwwroot\\js\\articleindex.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\wwwroot\\js\\articleindex.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|c:\\users\\mamma\\source\\repos\\blog\\blog.web\\areas\\admin\\views\\article\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\areas\\admin\\views\\article\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|c:\\users\\mamma\\source\\repos\\blog\\blog.web\\areas\\admin\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\areas\\admin\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "articleIndex.js",
-              "DocumentMoniker": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\wwwroot\\js\\articleIndex.js",
-              "RelativeDocumentMoniker": "Blog.Web\\wwwroot\\js\\articleIndex.js",
-              "ToolTip": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\wwwroot\\js\\articleIndex.js",
-              "RelativeToolTip": "Blog.Web\\wwwroot\\js\\articleIndex.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-22T11:06:50.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Areas\\Admin\\Views\\Article\\Index.cshtml",
-              "RelativeDocumentMoniker": "Blog.Web\\Areas\\Admin\\Views\\Article\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Areas\\Admin\\Views\\Article\\Index.cshtml",
-              "RelativeToolTip": "Blog.Web\\Areas\\Admin\\Views\\Article\\Index.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEcAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T10:53:31.269Z",
+              "Title": "ArticleController.cs",
+              "DocumentMoniker": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Areas\\Admin\\Controllers\\ArticleController.cs",
+              "RelativeDocumentMoniker": "Blog.Web\\Areas\\Admin\\Controllers\\ArticleController.cs",
+              "ToolTip": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Areas\\Admin\\Controllers\\ArticleController.cs",
+              "RelativeToolTip": "Blog.Web\\Areas\\Admin\\Controllers\\ArticleController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T17:58:37.704Z",
               "EditorCaption": ""
             }
           ]
