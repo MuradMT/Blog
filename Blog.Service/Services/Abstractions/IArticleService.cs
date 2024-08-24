@@ -7,4 +7,6 @@ public interface IArticleService
 {
     Task<IList<ArticleDto>> GetAllArticlesWithCategoriesNotDeletedAsync();
     Task CreateArticleAsync(ArticleAddDto articleAddDto);
+    Task<ArticleDto> GetArticleWithCategoriesNotDeletedAsync(Guid articleId);
+    Task UpdateAsync(ArticleUpdateDto articleUpdateDto);
 }

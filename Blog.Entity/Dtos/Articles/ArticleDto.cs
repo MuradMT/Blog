@@ -8,6 +8,7 @@ public class ArticleDto
     public DateTime CreatedDate { get; set; }
     public  string CreatedBy { get; set; }
     public string Title { get; set; }
+    public string Content { get; set; }
     public CategoryDto Category { get; set; }
     public bool IsDeleted { get; set; }
 }

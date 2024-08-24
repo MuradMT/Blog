@@ -29,4 +29,22 @@ public class ArticleService(IUnitOfWork _unitOfWork, IMapper _mapper) : IArticle
         //alternative way- return _mapper.Map<IList<Article>,IList<ArticleDto>>(articles);
         return _mapper.Map<IList<ArticleDto>>(articles);
     }
+    public async Task<ArticleDto> GetArticleWithCategoriesNotDeletedAsync(Guid articleId)
+    {
+        var article = await _unitOfWork.GetRepository<Article>().GetAsync(x => !x.IsDeleted&&x.Id==articleId, x => x.Category);
+        return _mapper.Map<ArticleDto>(article);
+    }
+
+    public async Task UpdateAsync(ArticleUpdateDto articleUpdateDto)
+    {
+        var article = await _unitOfWork.GetRepository<Article>().GetAsync(x => !x.IsDeleted && x.Id == articleUpdateDto.Id, x => x.Category);
+
+        article.Title = articleUpdateDto.Title;
+        article.Content = articleUpdateDto.Content;
+        article.CategoryId = articleUpdateDto.CategoryId;
+
+        await _unitOfWork.GetRepository<Article>().UpdateAsync(article);
+        await _unitOfWork.SaveAsync();
+
+    }
 }
