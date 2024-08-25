@@ -12,13 +12,9 @@ public class ArticleService(IUnitOfWork _unitOfWork, IMapper _mapper) : IArticle
     public async Task CreateArticleAsync(ArticleAddDto articleAddDto)
     {
         var userId = Guid.Parse("E9EDE6B0-9D0D-48B1-A4A0-05FD5130E067");
-        var article = new Article
-        {
-            Title = articleAddDto.Title,
-            Content = articleAddDto.Content,
-            CategoryId = articleAddDto.CategoryId,
-            UserId = userId,
-        };
+        var imageId = Guid.Parse("3224267D-94E7-4501-A7F3-0D376C3060A7");
+        var article = new Article(articleAddDto.Title, articleAddDto.Content, articleAddDto.CategoryId, userId, imageId);
+       
         await _unitOfWork.GetRepository<Article>().AddAsync(article);
         await _unitOfWork.SaveAsync();
     }
