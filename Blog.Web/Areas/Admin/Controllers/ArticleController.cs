@@ -27,6 +27,7 @@ public class ArticleController(IArticleService
     {
         await _articleService.CreateArticleAsync(articleAddDto);
         return RedirectToAction("Index","Article",new {Area="Admin"});
+      
     }
     [HttpGet]
     public async Task<IActionResult> Update(Guid articleId)
@@ -43,6 +44,11 @@ public class ArticleController(IArticleService
     {
         await _articleService.UpdateAsync(articleUpdateDto);
         return RedirectToAction("Index", "Article", new { Area = "Admin" });
-       
+    }
+    [HttpGet]
+    public async Task<IActionResult> Delete(Guid articleId)
+    {
+        await _articleService.SafeDeleteArticleAsync(articleId);
+        return RedirectToAction("Index", "Article", new { Area = "Admin" });
     }
 }

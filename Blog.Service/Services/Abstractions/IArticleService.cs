@@ -9,4 +9,5 @@ public interface IArticleService
     Task CreateArticleAsync(ArticleAddDto articleAddDto);
     Task<ArticleDto> GetArticleWithCategoriesNotDeletedAsync(Guid articleId);
     Task UpdateAsync(ArticleUpdateDto articleUpdateDto);
+    Task SafeDeleteArticleAsync(Guid articleId);
 }
