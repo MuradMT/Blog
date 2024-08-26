@@ -31,7 +31,7 @@ public class ArticleService(IUnitOfWork _unitOfWork, IMapper _mapper) : IArticle
         return _mapper.Map<ArticleDto>(article);
     }
 
-    public async Task UpdateAsync(ArticleUpdateDto articleUpdateDto)
+    public async Task<string> UpdateAsync(ArticleUpdateDto articleUpdateDto)
     {
         var article = await _unitOfWork.GetRepository<Article>().GetAsync(x => !x.IsDeleted && x.Id == articleUpdateDto.Id, x => x.Category);
 
@@ -41,14 +41,15 @@ public class ArticleService(IUnitOfWork _unitOfWork, IMapper _mapper) : IArticle
 
         await _unitOfWork.GetRepository<Article>().UpdateAsync(article);
         await _unitOfWork.SaveAsync();
-
+        return article.Title;
     }
-    public async Task SafeDeleteArticleAsync(Guid articleId)
+    public async Task<string> SafeDeleteArticleAsync(Guid articleId)
     {
         var article = await _unitOfWork.GetRepository<Article>().GetByGuidAsync(articleId);
         article.IsDeleted = true;
         article.DeletedDate = DateTime.Now;
         await _unitOfWork.GetRepository<Article>().UpdateAsync(article);
         await _unitOfWork.SaveAsync();
+        return article.Title;
     }
 }

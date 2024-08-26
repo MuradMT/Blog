@@ -1,16 +1,18 @@
 using AutoMapper;
+using Blog.Core.ResultMessages;
 using Blog.Entity.Dtos.Articles;
 using Blog.Entity.Entities;
 using Blog.Service.Services.Abstractions;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
+using NToastNotify;
 
 namespace Blog.Web.Areas.Admin.Controllers;
 
 [Area("Admin")]
 public class ArticleController(IArticleService 
-    _articleService,ICategoryService _categoryService,IMapper _mapper,IValidator<Article> validator): Controller
+    _articleService,ICategoryService _categoryService,IMapper _mapper,IValidator<Article> validator,IToastNotification _notification): Controller
 {
     // GET
     public async Task<IActionResult> Index()
@@ -35,6 +37,7 @@ public class ArticleController(IArticleService
         {
 
             await _articleService.CreateArticleAsync(articleAddDto);
+            _notification.AddSuccessToastMessage(Messages.Article.Add(articleAddDto.Title),new ToastrOptions { Title=Messages.Article.Succesfully_Added});
             return RedirectToAction("Index", "Article", new { Area = "Admin" });
         }
         else
@@ -64,7 +67,8 @@ public class ArticleController(IArticleService
         if (result.IsValid)
         {
 
-            await _articleService.UpdateAsync(articleUpdateDto);
+            var title= await _articleService.UpdateAsync(articleUpdateDto);
+            _notification.AddSuccessToastMessage(Messages.Article.Update(title), new ToastrOptions { Title = Messages.Article.Succesfully_Updated });
             return RedirectToAction("Index", "Article", new { Area = "Admin" });
         }
         else
@@ -78,7 +82,8 @@ public class ArticleController(IArticleService
     [HttpGet]
     public async Task<IActionResult> Delete(Guid articleId)
     {
-        await _articleService.SafeDeleteArticleAsync(articleId);
+        var title=await _articleService.SafeDeleteArticleAsync(articleId);
+        _notification.AddSuccessToastMessage(Messages.Article.Delete(title), new ToastrOptions { Title = Messages.Article.Succesfully_Deleted });
         return RedirectToAction("Index", "Article", new { Area = "Admin" });
     }
 }
