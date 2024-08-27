@@ -12,7 +12,8 @@ namespace Blog.Web.Areas.Admin.Controllers;
 
 [Area("Admin")]
 public class ArticleController(IArticleService 
-    _articleService,ICategoryService _categoryService,IMapper _mapper,IValidator<Article> validator,IToastNotification _notification): Controller
+    _articleService,ICategoryService _categoryService,IMapper _mapper,
+    IValidator<Article> validator,IToastNotification _notification): Controller
 {
     // GET
     public async Task<IActionResult> Index()

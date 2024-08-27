@@ -3,6 +3,7 @@ using Blog.Service.Services.Abstractions;
 using Blog.Service.Services.Concretes;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using System.Globalization;
 using System.Reflection;
@@ -13,7 +14,9 @@ public static class ServiceLayerExtension
 {
     public static IServiceCollection LoadServiceLayerExtension(this IServiceCollection services)
     {
-        
+        services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();
+
+
         services.AddScoped<IArticleService,ArticleService>();
         services.AddScoped<ICategoryService,CategoryService>();
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
