@@ -1,4 +1,5 @@
 using Blog.Service.FluentValidators;
+using Blog.Service.Helpers.Images;
 using Blog.Service.Services.Abstractions;
 using Blog.Service.Services.Concretes;
 using FluentValidation;
@@ -16,7 +17,7 @@ public static class ServiceLayerExtension
     {
         services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();
 
-
+        services.AddScoped<IImageHelper,ImageHelper>();
         services.AddScoped<IArticleService,ArticleService>();
         services.AddScoped<ICategoryService,CategoryService>();
         services.AddAutoMapper(Assembly.GetExecutingAssembly());

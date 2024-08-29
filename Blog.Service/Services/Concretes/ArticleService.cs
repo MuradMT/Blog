@@ -10,20 +10,9 @@ using System.Security.Claims;
 
 namespace Blog.Service.Services.Concretes;
 
-public class ArticleService : IArticleService
+public class ArticleService(IUnitOfWork unitOfWork, IMapper mapper, IHttpContextAccessor accessor) : IArticleService
 {
-    private readonly ClaimsPrincipal _principal;
-    private readonly IUnitOfWork unitOfWork;
-    private readonly IMapper mapper;
-    private readonly IHttpContextAccessor _accessor;
-
-    public ArticleService(IUnitOfWork unitOfWork, IMapper mapper, IHttpContextAccessor accessor)
-    {
-        this.unitOfWork = unitOfWork;
-        this.mapper = mapper;
-        _accessor = accessor;
-        _principal = _accessor.HttpContext.User;
-    }
+    private readonly ClaimsPrincipal _principal = accessor.HttpContext.User;
 
     public async Task CreateArticleAsync(ArticleAddDto articleAddDto)
     {
