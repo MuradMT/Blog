@@ -87,7 +87,7 @@ public class ImageHelper(IWebHostEnvironment env) : IImageHelper
         //Step 4 - creates a new file name with our input name
         name = ReplaceInvalidChars(name);
         var dateTime = DateTime.Now;
-        var newFileName = $"{name}_{dateTime.Millisecond}.{fileExtension}";
+        var newFileName = $"{name}_{dateTime.Millisecond}{fileExtension}";
 
         //Step 5 - Combines new file name with folder path
         var filePath = Path.Combine(path,newFileName);
