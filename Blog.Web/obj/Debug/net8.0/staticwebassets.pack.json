@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\images\\article-images\\pppppppppp_599.jpg"
     },
     {
+      "Id": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\wwwroot\\images\\article-images\\pppppppppp_621.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\pppppppppp_621.png"
+    },
+    {
       "Id": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\wwwroot\\images\\article-images\\uiopyhjklhbjnkm_572.png",
       "PackagePath": "staticwebassets\\images\\article-images\\uiopyhjklhbjnkm_572.png"
     },
@@ -43,6 +47,10 @@
     {
       "Id": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\wwwroot\\js\\articleIndex.js",
       "PackagePath": "staticwebassets\\js\\articleIndex.js"
+    },
+    {
+      "Id": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\wwwroot\\js\\categoryIndex.js",
+      "PackagePath": "staticwebassets\\js\\categoryIndex.js"
     },
     {
       "Id": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\wwwroot\\js\\site.js",
