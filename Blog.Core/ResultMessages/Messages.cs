@@ -21,5 +21,12 @@
             }
 
         }
+        public static class Category
+        {
+            public static string Add(string name)
+            {
+                return $"Category with {name} name added succesfully!";
+            }
+        }
     }
 }
