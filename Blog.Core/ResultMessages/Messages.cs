@@ -2,11 +2,11 @@
 {
     public static class Messages
     {
+        public const string Succesfully_Added = "Succesfully Added!";
+        public const string Succesfully_Updated = "Succesfully Updated!";
+        public const string Succesfully_Deleted = "Succesfully Deleted!";
         public static class Article
-        {
-            public const string Succesfully_Added = "Succesfully Added!";
-            public const string Succesfully_Updated = "Succesfully Updated!";
-            public const string Succesfully_Deleted = "Succesfully Deleted!";    
+        {   
             public static string Add(string title)
             {
                 return $"Article with {title} title added succesfully!";
@@ -26,6 +26,14 @@
             public static string Add(string name)
             {
                 return $"Category with {name} name added succesfully!";
+            }
+            public static string Update(string name)
+            {
+                return $"Category with {name} name updated succesfully!";
+            }
+            public static string Delete(string name)
+            {
+                return $"Category with {name} name deleted succesfully!";
             }
         }
     }

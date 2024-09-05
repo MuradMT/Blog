@@ -38,7 +38,7 @@ public class ArticleController(IArticleService
         {
 
             await _articleService.CreateArticleAsync(articleAddDto);
-            _notification.AddSuccessToastMessage(Messages.Article.Add(articleAddDto.Title),new ToastrOptions { Title=Messages.Article.Succesfully_Added});
+            _notification.AddSuccessToastMessage(Messages.Article.Add(articleAddDto.Title),new ToastrOptions { Title=Messages.Succesfully_Added});
             return RedirectToAction("Index", "Article", new { Area = "Admin" });
         }
         else
@@ -69,7 +69,7 @@ public class ArticleController(IArticleService
         {
 
             var title= await _articleService.UpdateAsync(articleUpdateDto);
-            _notification.AddSuccessToastMessage(Messages.Article.Update(title), new ToastrOptions { Title = Messages.Article.Succesfully_Updated });
+            _notification.AddSuccessToastMessage(Messages.Article.Update(title), new ToastrOptions { Title = Messages.Succesfully_Updated });
             return RedirectToAction("Index", "Article", new { Area = "Admin" });
         }
         else
@@ -84,7 +84,7 @@ public class ArticleController(IArticleService
     public async Task<IActionResult> Delete(Guid articleId)
     {
         var title=await _articleService.SafeDeleteArticleAsync(articleId);
-        _notification.AddSuccessToastMessage(Messages.Article.Delete(title), new ToastrOptions { Title = Messages.Article.Succesfully_Deleted });
+        _notification.AddSuccessToastMessage(Messages.Article.Delete(title), new ToastrOptions { Title = Messages.Succesfully_Deleted });
         return RedirectToAction("Index", "Article", new { Area = "Admin" });
     }
 }

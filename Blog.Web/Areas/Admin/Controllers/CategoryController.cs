@@ -32,7 +32,7 @@ namespace Blog.Web.Areas.Admin.Controllers
             if (result.IsValid)
             {
                 await categoryService.CreateCategoryAsync(categoryAddDto);
-                toast.AddSuccessToastMessage(Messages.Category.Add(categoryAddDto.Name), new ToastrOptions { Title = "Succesfully Added!" });
+                toast.AddSuccessToastMessage(Messages.Category.Add(categoryAddDto.Name), new ToastrOptions { Title = Messages.Succesfully_Added });
                 return RedirectToAction("Index", "Category", new { Area = "Admin" });
             }
             else
@@ -40,6 +40,39 @@ namespace Blog.Web.Areas.Admin.Controllers
                 result.AddToModelState(this.ModelState);
                 return View();
             }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Update(Guid categoryId)
+        {
+            var category = await categoryService.GetCategoryByGuid(categoryId);
+            var map = mapper.Map<Category, CategoryUpdateDto>(category);
+
+            return View(map);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Update(CategoryUpdateDto categoryUpdateDto)
+        {
+            var map = mapper.Map<Category>(categoryUpdateDto);
+            var result = await validator.ValidateAsync(map);
+
+            if (result.IsValid)
+            {
+                var name = await categoryService.UpdateCategoryAsync(categoryUpdateDto);
+                toast.AddSuccessToastMessage(Messages.Category.Update(name), new ToastrOptions { Title = Messages.Succesfully_Updated });
+                return RedirectToAction("Index", "Category", new { Area = "Admin" });
+            }
+            else
+            {
+                result.AddToModelState(this.ModelState);
+                return View();
+            }
+        }
+        public async Task<IActionResult> Delete(Guid categoryId)
+        {
+            var name = await categoryService.SafeDeleteCategoryAsync(categoryId);
+            toast.AddSuccessToastMessage(Messages.Category.Delete(name), new ToastrOptions() { Title = Messages.Succesfully_Deleted });
+            return RedirectToAction("Index", "Category", new { Area = "Admin" });
         }
 
     }
