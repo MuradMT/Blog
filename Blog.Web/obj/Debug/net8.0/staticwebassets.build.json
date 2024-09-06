@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TqhsTY+Jc3MzD9ZlykeXjW3IC1tsxpvluCIxG4Udd3E=",
+  "Hash": "7V/YVeOOGxvMH6mO8XzEUgfiJ/4Iu+NoS4rUtr6XZh4=",
   "Source": "Blog.Web",
   "BasePath": "_content/Blog.Web",
   "Mode": "Default",
@@ -300,6 +300,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\articleIndex.js"
+    },
+    {
+      "Identity": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\wwwroot\\js\\categoryAdd.js",
+      "SourceId": "Blog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\wwwroot\\",
+      "BasePath": "_content/Blog.Web",
+      "RelativePath": "js/categoryAdd.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\categoryAdd.js"
     },
     {
       "Identity": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\wwwroot\\js\\categoryIndex.js",

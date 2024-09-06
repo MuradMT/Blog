@@ -5,6 +5,7 @@
         public const string Succesfully_Added = "Succesfully Added!";
         public const string Succesfully_Updated = "Succesfully Updated!";
         public const string Succesfully_Deleted = "Succesfully Deleted!";
+        public const string Failed_Operation = "Failed Operation!";
         public static class Article
         {   
             public static string Add(string title)
