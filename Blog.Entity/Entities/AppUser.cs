@@ -8,7 +8,7 @@ public class AppUser:IdentityUser<Guid>
     public string FirstName { get; set; }
     public string LastName { get; set; }
 
-    public Guid ImageId { get; set; }
+    public Guid ImageId { get; set; } = Guid.Parse("3224267D-94E7-4501-A7F3-0D376C3060A7");
     public Image Image { get; set; }
 
     public ICollection<Article> Artiicles { get; set; }

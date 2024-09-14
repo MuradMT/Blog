@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\mamma\\source\\repos\\Blog\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|c:\\users\\mamma\\source\\repos\\blog\\blog.web\\wwwroot\\js\\userindex.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\wwwroot\\js\\userindex.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{0E5C58BD-9418-4321-8325-25838519202E}|Blog.Entity\\Blog.Entity.csproj|c:\\users\\mamma\\source\\repos\\blog\\blog.entity\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E5C58BD-9418-4321-8325-25838519202E}|Blog.Entity\\Blog.Entity.csproj|solutionrelative:blog.entity\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|c:\\users\\mamma\\source\\repos\\blog\\blog.web\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{32F4B756-C35C-439D-A380-7704AF610E2B}|Blog.Data\\Blog.Data.csproj|c:\\users\\mamma\\source\\repos\\blog\\blog.data\\configurations\\imageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32F4B756-C35C-439D-A380-7704AF610E2B}|Blog.Data\\Blog.Data.csproj|solutionrelative:blog.data\\configurations\\imageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|c:\\users\\mamma\\source\\repos\\blog\\blog.web\\areas\\admin\\views\\user\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\areas\\admin\\views\\user\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|c:\\users\\mamma\\source\\repos\\blog\\blog.web\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A68BC47D-2C6F-4C9A-A99A-C388031470CA}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F75A04D-091D-4C5A-82AA-A32FD704D6B8}|Blog.Core\\Blog.Core.csproj|c:\\users\\mamma\\source\\repos\\blog\\blog.core\\resultmessages\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F75A04D-091D-4C5A-82AA-A32FD704D6B8}|Blog.Core\\Blog.Core.csproj|solutionrelative:blog.core\\resultmessages\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "userIndex.js",
-              "DocumentMoniker": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\wwwroot\\js\\userIndex.js",
-              "RelativeDocumentMoniker": "Blog.Web\\wwwroot\\js\\userIndex.js",
-              "ToolTip": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\wwwroot\\js\\userIndex.js*",
-              "RelativeToolTip": "Blog.Web\\wwwroot\\js\\userIndex.js*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-07T12:20:02.05Z",
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Entity\\Entities\\AppUser.cs",
+              "RelativeDocumentMoniker": "Blog.Entity\\Entities\\AppUser.cs",
+              "ToolTip": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Entity\\Entities\\AppUser.cs*",
+              "RelativeToolTip": "Blog.Entity\\Entities\\AppUser.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T16:05:04.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "RelativeDocumentMoniker": "Blog.Web\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "RelativeToolTip": "Blog.Web\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Title": "ImageConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Data\\Configurations\\ImageConfiguration.cs",
+              "RelativeDocumentMoniker": "Blog.Data\\Configurations\\ImageConfiguration.cs",
+              "ToolTip": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Data\\Configurations\\ImageConfiguration.cs",
+              "RelativeToolTip": "Blog.Data\\Configurations\\ImageConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T16:04:48.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Messages.cs",
+              "DocumentMoniker": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Core\\ResultMessages\\Messages.cs",
+              "RelativeDocumentMoniker": "Blog.Core\\ResultMessages\\Messages.cs",
+              "ToolTip": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Core\\ResultMessages\\Messages.cs*",
+              "RelativeToolTip": "Blog.Core\\ResultMessages\\Messages.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T14:33:17.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Areas\\Admin\\Views\\User\\Add.cshtml",
+              "RelativeDocumentMoniker": "Blog.Web\\Areas\\Admin\\Views\\User\\Add.cshtml",
+              "ToolTip": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Areas\\Admin\\Views\\User\\Add.cshtml*",
+              "RelativeToolTip": "Blog.Web\\Areas\\Admin\\Views\\User\\Add.cshtml*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-07T11:31:03.012Z",
+              "WhenOpened": "2024-09-14T14:04:57.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Blog.Web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\mamma\\source\\repos\\Blog\\Blog.Web\\Areas\\Admin\\Controllers\\UserController.cs*",
+              "RelativeToolTip": "Blog.Web\\Areas\\Admin\\Controllers\\UserController.cs*",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T13:53:38.826Z",
               "EditorCaption": ""
             }
           ]
